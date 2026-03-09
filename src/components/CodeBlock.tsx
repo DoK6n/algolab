@@ -162,7 +162,7 @@ export function CodeBlock({ code, className }: CodeBlockProps) {
     <div className={wrapper({ className })}>
       <div className={header()}>
         <span className={lang()}>python3</span>
-        <button onClick={copy} className={copyBtn()}>
+        <button type="button" onClick={copy} className={copyBtn()}>
           {copied ? "✅ 복사됨" : "📋 복사"}
         </button>
       </div>

@@ -3,7 +3,9 @@
     "allow": [
       "Bash(bun add tailwind-variants)",
       "Bash(sort -t: -k2 -rn)",
-      "Bash(bun run build)"
+      "Bash(bun run build)",
+      "Bash(bunx biome format --write src/)",
+      "Bash(bunx biome lint src/)"
     ]
   }
 }

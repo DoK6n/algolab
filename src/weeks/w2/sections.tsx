@@ -596,7 +596,7 @@ print(solution(6, [7, 10]))  # 28`}
               ["힙", "O(n log n)", "O(n log n)", "O(1)", "❌"],
             ].map(([name, avg, worst, space, stable], i) => (
               <tr
-                key={i}
+                key={name}
                 className={`border-b border-[#1e2d45] ${i % 2 !== 0 ? "bg-[#0d1117]" : ""}`}
               >
                 <td className="text-[#e2e8f0] px-3 py-2 font-bold">{name}</td>
@@ -662,9 +662,9 @@ print(solution(6, [7, 10]))  # 28`}
             desc: "이진 탐색 응용",
             url: "https://programmers.co.kr/learn/courses/30/lessons/42747",
           },
-        ].map((p, i) => (
+        ].map(p => (
           <div
-            key={i}
+            key={p.title}
             className="flex justify-between items-center py-[10px] border-b border-[#1e2d45]"
           >
             <div>
