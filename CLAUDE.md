@@ -1,4 +1,4 @@
-# AlgoLab — Project Notes for Claude
+# 알고있슈 (algoitsu) — Project Notes for Claude
 
 ## Stack
 
@@ -6,6 +6,7 @@
 - **Tailwind CSS v4** (no config file — uses CSS `@import "tailwindcss"`)
 - **tailwind-variants** (`tv()`) — primary styling system
 - **tailwind-merge** — installed, available for class merging
+- **Biome** — linter + formatter (`bun run lint`)
 - **Bun** — package manager and dev server (`bun run dev`)
 
 ## Styling Conventions
@@ -137,6 +138,16 @@ Use these constants directly as Tailwind arbitrary values in section files (`tex
 - `activeId` / `onSelect` — controlled nav state
 - `header` — ReactNode rendered in the sticky top bar
 - `children` — main content area
+
+## Biome Configuration
+
+`biome.json` is configured with:
+- **Quote style**: double quotes
+- **Indent**: 2 spaces
+- **Arrow functions**: no parentheses for single param (`x => x`)
+- **`noArrayIndexKey`**: off — code line renderers, syntax tokenizers, and algorithm visualizers all require positional index keys
+
+Format all files: `bunx biome format --write src/`
 
 ## Commands
 
